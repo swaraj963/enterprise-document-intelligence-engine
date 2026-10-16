@@ -5,8 +5,10 @@ the exact file and page or section they came from. If the answer isn't in your
 documents, it says so instead of guessing.
 
 **Runs on free tiers only:** Groq (free API key) for answers, and a local
-open-source model for document understanding. No billing required.
+open-source model for document understanding. No billing required
 ![App screenshot](screenshot.png)
+
+![Source references](screenshot-2.png)
 
 ## Architecture
 
