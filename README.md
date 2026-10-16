@@ -6,6 +6,7 @@ documents, it says so instead of guessing.
 
 **Runs on free tiers only:** Groq (free API key) for answers, and a local
 open-source model for document understanding. No billing required.
+![App screenshot](screenshot.png)
 
 ## Architecture
 
@@ -24,7 +25,7 @@ FastAPI ── SecurityHeaders ── CORS ── SlowAPI rate limiter
 
 | Layer | Choice |
 |---|---|
-| LLM | Groq `llama-3.1-8b-instant` (configurable) via `langchain-groq` |
+| LLM | Groq `openai/gpt-oss-20b` (configurable) via `langchain-groq` |
 | Embeddings | `all-MiniLM-L6-v2`, local CPU, via `langchain-huggingface` |
 | Vector store | ChromaDB, persistent in `data/vault/` |
 | Backend | FastAPI + SlowAPI |

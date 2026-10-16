@@ -14,7 +14,7 @@ class Settings(BaseSettings):
 
     # --- AI (free tier) ---
     groq_api_key: SecretStr = Field(default=SecretStr(""))
-    llm_model: str = "llama-3.1-8b-instant"
+    llm_model: str = "openai/gpt-oss-20b"
     llm_temperature: float = 0.0
     embedding_model: str = "sentence-transformers/all-MiniLM-L6-v2"
 
